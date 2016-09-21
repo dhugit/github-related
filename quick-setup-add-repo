@@ -1,0 +1,7 @@
+create a new repository on the command line
+
+git init
+git add * (all files under current dir)
+git commit -m "first commit"
+git remote add origin https://dhugit@github.com/dhugit/kickstart-config.git
+git push -u origin master
