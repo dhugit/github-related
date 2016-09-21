@@ -7,3 +7,11 @@ git commit -m "first commit"
 [ at github web site, add repo named github-related ]
 git remote add origin https://dhugit@github.com/dhugit/github-related.git
 git push -u origin master
+
+
+==
+
+in the case local repo was cloned from github, to enable push update url with command
+
+"git remote set-url origin https://donghu@github.com/dhugit/repo-name-here.git"
+or edit "./git/config" and update the url
