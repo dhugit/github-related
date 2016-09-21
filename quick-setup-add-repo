@@ -4,5 +4,6 @@ git init
 git add * (all files under current dir)
 git status -s (check status)
 git commit -m "first commit"
-git remote add origin https://dhugit@github.com/dhugit/kickstart-config.git
+[ at github web site, add repo named github-related ]
+git remote add origin https://dhugit@github.com/dhugit/github-related.git
 git push -u origin master
