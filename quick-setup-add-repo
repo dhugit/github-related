@@ -13,5 +13,13 @@ git push -u origin master
 
 in the case local repo was cloned from github, to enable push update url with command
 
-"git remote set-url origin https://donghu@github.com/dhugit/repo-name-here.git"
+"git remote set-url origin https://dhugit@github.com/dhugit/repo-name-here.git"
 or edit "./git/config" and update the url
+
+==
+
+update a file:
+
+   edit files,
+   git commit -m "update"
+   git push -u origin master
