@@ -20,6 +20,6 @@ or edit "./git/config" and update the url
 
 update a file:
 
-   edit files,
+   edit files, check with "git status -s"
    git commit -m "update"
    git push -u origin master
