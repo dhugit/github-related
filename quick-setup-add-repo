@@ -1,9 +1,7 @@
 
 to clone a project:
-  on locat terminal run: git clone httpss://github.com/...
+  on locat terminal run: git clone https://github.com/...
   The url is from github website, "clone or download with https" -> copy to clipboard
-
-
 
 ==
 
@@ -23,7 +21,7 @@ git push -u origin master
 in the case local repo was cloned from github, to enable push update url with command
 
 "git remote set-url origin https://dhugit@github.com/dhugit/repo-name-here.git"
-or edit "./git/config" and update the url
+or edit ".git/config" and update the url
 
 ==
 
