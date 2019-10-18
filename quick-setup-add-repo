@@ -12,8 +12,15 @@ git add * (all files under current dir)
 git status -s (check status)
 git commit -m "first commit"
 [ at github web site, add repo named github-related ]
+   ==
+   password for 'https://dhugit@github.com': 
+   remote: Repository not found.
+   fatal: repository 'https://dhugit@github.com/dhugit/github-related.git/' not found
+   ==
 git remote add origin https://dhugit@github.com/dhugit/github-related.git
 git push -u origin master
+   
+   
 
 
 ==
