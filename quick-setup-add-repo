@@ -33,8 +33,44 @@ or edit ".git/config" and update the url
 ==
 
 update a file:
+when you change a file which is already in the repository, 
+you have to git add it again if you want it to be staged. 
+Hope it helps. You have to use git add to stage them, 
+or they won't commit. ... So when you git commit , t
+hose changes won't be added since they are not staged.
 
    edit files, check with "git status -s"
    git add "files changed"
    git commit -m "update"
    git push -u origin master
+   
+   [donghu@fedora bash]$ git status -s
+ M getopt
+[donghu@fedora bash]$ git commit -m "upd"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   getopt
+
+no changes added to commit
+[donghu@fedora bash]$ git add getopt
+[donghu@fedora bash]$ git status -s
+M  getopt
+[donghu@fedora bash]$ git commit -m "upd"
+[master 6fbaf4f] upd
+ 1 file changed, 2 insertions(+)
+[donghu@fedora bash]$ git push -u origin master
+Password for 'https://dhugit@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dhugit/bash.git
+   d243cdf..6fbaf4f  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[donghu@fedora bash]$ 
+
+   
