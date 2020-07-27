@@ -93,3 +93,18 @@ Now try editing a file (try the README) and then do:
 $ git commit -am "Update README.md"
 $ git push
 You should not be asked for a username or password. If it works, your SSH key is correctly configured.
+
+
+===
+GitHub uses your commit email address to associate commits with your GitHub account. You can choose the email address that will be associated with the commits you push from the command line as well as web-based Git operations you make.
+
+For web-based Git operations, you can set your commit email address on GitHub. For commits you push from the command line, you can set your commit email address in Git.
+
+Any commits you made prior to changing your commit email address are still associated with your previous email address.
+
+Note: You cannot verify email addresses from disposable domains. If you'd like to keep your email address private, you can use a GitHub-provided noreply email address. For more information, see "Setting your commit email address on GitHub."
+
+. on linux command line, check setting:
+
+	[dhu@mythtv2 github-related]$ git config --list
+. update: ~/.gitconfig
