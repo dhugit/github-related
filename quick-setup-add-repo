@@ -7,10 +7,20 @@ to clone a project:
 
 create a new repository on the command line
 
+echo "blar..." >> README.md
+
 git init
 git add * (all files under current dir)
 git status -s (check status)
 git commit -m "first commit"
+git remote add origin git@github.com:dhugit/python-code.git
+git push -u origin master
+
+or push an existing repo from command line
+git remote add origin git@github.com:dhugit/python-code.git
+git push -u origin master
+
+
 [ at github web site, add repo named github-related ]
    ==
    password for 'https://dhugit@github.com': 
