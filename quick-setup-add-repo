@@ -117,4 +117,7 @@ Note: You cannot verify email addresses from disposable domains. If you'd like t
 . on linux command line, check setting:
 
 	[dhu@mythtv2 github-related]$ git config --list
-. update: ~/.gitconfig
+			git config --global user.email "dhugit@users.noreply.github.com"  # add email address
+			git config --global user.email  # check
+
+. file updated: : ~/.gitconfig
