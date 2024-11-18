@@ -122,4 +122,49 @@ Note: You cannot verify email addresses from disposable domains. If you'd like t
 
 . file updated: : ~/.gitconfig
 
+===
+get and creating projects
+ git init
+ git clone ssh://git@github.com/[username]/[repository-name].git
 
+basic Snapshotting
+ git status
+ git add [filename.txt]
+ git add -A
+ git add .
+ git commit -m "msg"
+ git rm -r [filename.txt]
+ git remote -v ; vie remote repo of currently working file or dir
+
+Branching / merging
+ git branch ; list
+ git branch -a ; list both local and remote
+ git branch  [branch name] ; create new
+ git branch -d [branch name] ; delete
+ git push origin --delete [ branch name ] ; delete remote
+ git checkout -b [ b name ] ; create a new branch and switch to it
+ git checkout -b [b name ] origin/[b name ] ; clone a remote brahch and switch to it
+ git branch -m [old] [new]; rename local
+ git checkout [b name ] ; switch to branch
+ git checkout - ; switch to last checked out branch
+ git checkout -- [filename.txt] ; discard changes to a file
+ git merge [b name] ; merge a branch into the active branch
+ git merge [source branch] [target branch]; merge a b into a target 
+ git stash; stash changes in a dirty working dir
+ git stash clear ; remove all stashed entries
+ git stash pop ; apply latest stashed to workign dir
+
+Sharing and updating projects
+ git push origin [branch name]; push a branch to remote
+ git push -u origin [brahch name]; push changes to remote and remember the branch
+ git push; push changes to remote repo (remembered branch)
+ git push origin --delete [b name]; delete a remote branch
+ git pull ; update local repo to newest commit
+ git remote add origin ssh://git@github.com/...;  add a remote repository
+ git remote set-url origin ssh://..   ; set a repository's origin branch to ssh
+
+Inspection &comparision
+ git log
+ git log --summary
+ git log --oneline
+ git diff [source branch] [ target branch] 
